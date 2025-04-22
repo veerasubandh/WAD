@@ -1,0 +1,7 @@
+<!-- src/app/components/profile/profile.component.html -->
+<h2>Profile</h2>
+<div *ngIf="user">
+  <p>Username: {{ user.username }}</p>
+  <p>Email: {{ user.email }}</p>
+  <button (click)="onLogout()">Logout</button>
+</div>
